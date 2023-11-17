@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+/* В условии было написано что для всех кросов должен быть один файл стилей, а не для всех страниц сайта.
+Я думал что имеется в виду страницы кросовков
+Ну раз надо так надо */
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid;
+    border-color: rgb(202, 204, 211);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_content {
+    width: 1160px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.header img {
+    display: flex;
+    width: 212px;
+}
+
+.header ul a {
+    color: rgb(18, 23, 35);
+}
+
+.main {
+    background-color: rgb(241, 241, 241);
+    flex: 1 0 auto;
+}
+
+.october {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
+    margin: 40px auto;
+    gap: 25px 25px;
+}
+
+.october_h1 {
+    font-family: "Anonymous Pro", sans-serif;
+    margin: 10px 400px 10px 0px;
+    color: rgb(18, 23, 35);
+    font-size: 48px;
+}
+
+.card {
+    flex-direction: column;
+    width: 370px;
+    background-color: white;
+    border-radius: 12px;
+    transition: ease-in-out 100ms;
+}
+
+.a_card h3,
+p {
+    color: rgb(18, 23, 35);
+}
+
+.a_card {
+    text-decoration: none;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    transform: translate(0px, -10px);
+}
+
+.card:active {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
+    scale: 0.98;
+}
+
+.card__title {
+    padding-top: 30px;
+    font-family: "Anonymous Pro", sans-serif;
+    font-size: 26px;
+}
+
+.card__text {
+    font-family: "Anonymous Pro", sans-serif;
+    font-size: 20px;
+    padding-top: 9px;
+    padding-bottom: 32px;
+}
+
+.card__text,
+.card__title {
+    margin-left: 24px;
+    margin-right: 24px;
+    color: rgb(18, 23, 35);
+}
+
+.card img {
+    width: 370px;
+    border-radius: 12px 12px 0 0;
+}
+
+li a {
+    font-family: "Anonymous Pro", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+.ul_bottom a {
+    color: white;
+}
+
+.footer {
+    height: 142px;
+    background-color: rgb(18, 23, 35);
+}
+
+.content_footer {
+    width: 1160px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 2px solid;
+    border-color: rgba(230, 232, 236, 0.4);
+    flex-wrap: wrap;
+}
+
+.footer img {
+    width: 300px;
+}
+
+.mark {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark h3 {
+    font-family: "Anonymous Pro", sans-serif;
+    font-size: 16px;
+    color: rgba(161, 166, 180, 1);
+}
+
+/* BigCard */
+
+.big_card span {
+    color: rgb(18, 23, 35);
+}
+
+.big_card {
+    width: 1140px;
+    background-color: white;
+    padding: 48px;
+    margin: 32px auto;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.big_card img {
+    margin-bottom: 24px;
+}
+
+.big_card p {
+    color: rgba(18, 23, 35, 1);
+    margin: 24px 0;
+}
+
+.big_card h1 {
+    color: rgba(18, 23, 35, 1);
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.big_card h2 {
+    margin: 24px 0;
+    color: rgba(18, 23, 35, 1);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.inf {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inf_1 {
+    width: 506px;
+}
+
+.inf_2 {
+    width: 506px;
+}
+
+.inf_in {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid;
+}
+
+#inf_h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(18, 23, 35, 1);
+}
+
+@media screen and (max-width: 425px) {
+    .header_content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_content ul {
+        display: none;
+    }
+
+    .content_footer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .october {
+        width: 343px;
+    }
+
+    .card {
+        width: 343px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        margin: 24px 0;
+        font-size: 20px;
+    }
+
+    /* BigCard */
+
+    .big_card {
+        margin: 32px auto;
+        border-radius: 12px;
+        padding: 24px;
+        width: 343px;
+    }
+
+    .big_card img {
+        width: 100%;
+    }
+
+    .inf {
+        flex-wrap: wrap;
+    }
+
+    .big_card p {
+        font-size: 16px;
+    }
+    
+    .big_card h1 {
+        font-size: 32px;
+    }
+    
+    .big_card h2 {
+        margin: 24px 0;
+        font-size: 20px;
+    }
+    
+    .big_card span {
+        font-size: 16px;
+    }
+
+    #inf_h3 {
+        font-size: 24px;
+    }
+}

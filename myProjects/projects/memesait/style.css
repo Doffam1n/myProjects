@@ -1,0 +1,70 @@
+* {
+    font-family: "Press Start 2P";
+    margin: 0;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #FF3DFE;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    background: linear-gradient(163.8deg, #B4F6FF 0%, #CA58FF 57.93%, #5253FF 100%);
+    min-height: 82%;
+    flex: 1 1 auto;
+}
+
+.memes {
+    width: 1122px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.mem {
+    background-color: yellow;
+    width: 364px;
+}
+
+.mem h2 {
+    padding: 10px;
+}
+
+.mem img {
+    width: 364px;
+    height: 254px;
+}
+
+.footer {
+    background-color: black;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
