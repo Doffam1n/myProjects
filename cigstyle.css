@@ -1,0 +1,14 @@
+.body_cig {
+    display: flex;
+    flex-direction: column;
+}
+
+.cig {
+    height: 750px;
+    width: 1440px;
+}
+
+button {
+    height: 200px;
+    background-color: rgb(156, 8, 116);
+}
