@@ -30,6 +30,7 @@ function getNoteTemplete(title) {
             <span class="btn btn-small btn-success">&check;</span>
             <span class="btn btn-small btn-danger">&times;</span>
             </span>
-        </li>`
+        </li>
+        `
     
 }

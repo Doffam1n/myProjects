@@ -46,6 +46,10 @@ body {
     flex-direction: column;
 }
 
+.otdel {
+    margin: 20px auto;
+}
+
 .footer {
    background-color: rgb(255, 255, 255); 
 }

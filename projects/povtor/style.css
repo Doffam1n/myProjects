@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 980px;
+    background-color: rgb(95, 155, 95);
+}
+
+.okno {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#text-input {
+    height: 50px;
+    min-width: 300px;
+    max-width: 450px;
+    font-size: 20px;
+}
+
+#text-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    min-width: 300px;
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, 0.075);
+    font-size: 25px;
+    margin: 80px;
+}
+
+a {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: chocolate;
+    align-self: flex-start;
+    font-family: "Anonymous Pro", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
