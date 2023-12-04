@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 980px;
+    background-color: #ECD06F;
+}
+
+h1 {
+    color: #D14836;
+    font-size: 50px;
+}
+
+.okno {
+    height: 600px;
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.wrap {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top {
+    position: relative;
+    top: -120px;
+}
+
+h2 {
+    color: #6c757d;
+    text-align: center;
+}
+
+input {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid red;
+    outline: 1px solid red;
+    border-radius: 8px;
+    bottom: 20px;
+}
+
+input:focus {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+.links {
+    position: relative;
+    bottom: -130px;
+}
+
+.link {
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #D14836;
+    font-family: "Anonymous Pro", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
