@@ -11,36 +11,36 @@ prompt1.addEventListener('submit', check);
 
 function check (evt1) {
     evt1.preventDefault();
+    console.log("чек");
     if (input.value == num) {
         ok();
     } else {
         no();
     }
     input.value = "";
-    console.log("чек");
 };
 
 function ok () {
- vis("Вы победили!");
- console.log("ок");
+    console.log("ок");
+    vis("Вы победили!");
 };
 
 function no () {
+    console.log("но");
     if (input.value > num) {
         vis("Число меньше");
     } else {
         vis("Число больше");
     }
-    console.log("но");
 };
 
 function vis (data) {
-    output.innerText = data;
     console.log("вис");
+    output.innerText = data;
 };
 
 input.focus();
 
 
 
-// Чел харош, Маргины, мне похуй, 
+// Чел харош, Маргины, мне похуй, супер чел харош
