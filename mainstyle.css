@@ -64,8 +64,8 @@ body {
 }
 
 .otdel {
-    width: 200px;
-    margin: 20px auto;
+    width: auto;
+    text-align: center;
 }
 
 .footer {
